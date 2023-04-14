@@ -41,6 +41,8 @@ public interface Contract {
         public Butterfly(String item, String direction, int x, int y, String color, float size, Integer age, String state) {
             this.item = item;
             this.direction = direction;
+            this.x = x;
+            this.y = y;
             this.color = color;
             this.size = size;
             this.age = age;
