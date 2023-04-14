@@ -76,7 +76,7 @@ public interface Contract {
          * Method that will cause the butterfly to use the item, based on re-defining the item to its purpose
          */
         public void use(String item) {
-            item = item + " broken";
+            item = "broken" + item;
             System.out.println("Uh oh! The butterfly used the item, and now its" + item);
 
         }
@@ -144,7 +144,7 @@ public interface Contract {
          */
         public void rest() {
             state = "asleep";
-            System.out.println("Time to rest, which means my state is" + state + "and i'm sleeping, zzzzz"); 
+            System.out.println("Time to rest, which means the butterfly state is" + state + "and its sleeping, zzzzz"); 
         }
 
         /**
@@ -152,7 +152,7 @@ public interface Contract {
          */
         public void undo () {
             state = "awake and moving";
-            System.out.println("Time to start moving, so my state is" + state + "off I go!"); 
+            System.out.println("Time to start moving, so the butterfly state is" + state + "off it goes!"); 
         }
 
         public static void main(String[] args) {
